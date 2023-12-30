@@ -722,17 +722,18 @@
                             <div class="row g-3 ">
                                 <div class="col-12 col-sm-6 ">
                                     <input type="text " class="form-control border-0 " placeholder="Your Name " style="height: 55px; " id="name">
-                                    <div id="nameError" style="color: rgb(255, 255, 255); background-color: #D81324;"></div>
+                                    <div id="nameError" style="color: rgb(255, 255, 255); background-color: #D81324; text-align: left;"></div>
 
                                 </div>
                                 <div class="col-12 col-sm-6 ">
-                                    <input type="email " class="form-control border-0 " placeholder="Phone Number " style="height: 55px; " id="phoneNumber">
-                                    <div id="phoneNumberError" style="color: rgb(255, 255, 255); background-color: #D81324;"></div>
+                                    <input type="text" class="form-control border-0" placeholder="Phone Number" style="height: 55px;" id="phoneNumber" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                    <div id="phoneNumberError" style="color: rgb(255, 255, 255); background-color: #D81324; text-align: left;"></div>
+
 
                                 </div>
                                 <div class="col-12 col-sm-6 ">
                                     <input type="email " class="form-control border-0 " placeholder="Your Email " style="height: 55px; " id="email">
-                                    <div id="emailError" style="color: rgb(255, 255, 255); background-color: #D81324;"></div>
+                                    <div id="emailError" style="color: rgb(255, 255, 255); background-color: #D81324; text-align: left;"></div>
 
                                 </div>
 
@@ -740,13 +741,13 @@
                                 <div class="col-12 col-sm-6 ">
 
                                     <input type="text " class="form-control border-0 datetimepicker-input " placeholder="City " data-target="#date1 " data-toggle="datetimepicker " style="height: 55px; " id="city">
-                                    <div id="cityError" style="color: rgb(255, 255, 255); background-color: #D81324;"></div>
+                                    <div id="cityError" style="color: rgb(255, 255, 255); background-color: #D81324; text-align: left;"></div>
 
 
                                 </div>
                                 <div class="col-12 ">
                                     <textarea class="form-control border-0 " placeholder="Restaurant Name* " id="restaurantName"></textarea>
-                                    <div id="restaurantNameError" style="color: rgb(255, 255, 255);background-color: #D81324;"></div>
+                                    <div id="restaurantNameError" style="color: rgb(255, 255, 255);background-color: #D81324; text-align: left;"></div>
 
 
                                 </div>
